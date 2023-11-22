@@ -1,0 +1,60 @@
+/*
+Significa que aplica para todo.
+*/
+* {}
+/*
+Para CSS todo es una caja
+*/
+.componente {
+  border: 4px solid black;
+  margin: 10px; /* Margen exterior */
+  padding: 10px; /* Margen interior */
+  width: 500px; /* ancho */
+  min-height: 200px; /* Altura minima */
+}
+
+/* CUANDO SEAN CLASES = class="algo" lleva punto */
+/*
+
+*/
+.c-html {
+  width: 100px; /* ancho */
+  height: 100px; /* alto */
+  border: 2px solid rgb(250, 209, 209); /* ancho, tipo linea, color */
+  background-color: rgb(245, 87, 30); /* color de fondo */
+  color: white; /* color de la letra */
+  display: inline-flex; /* Afecta el contenido del elemento */
+  justify-content: center; /* Alinea horizontalmente (Elementos hijos) */
+  align-items: center; /* Alinea verticalmente (Elementos hijos) */
+}
+.c-css {
+  width: 100px; /* ancho */
+  height: 100px; /* alto */
+  border: 2px solid rgb(209, 250, 213); /* ancho, tipo linea, color */
+  background-color: rgb(64, 102, 6); /* color de fondo */
+  color: white; /* color de la letra */
+  display: inline-flex; /* Afecta el contenido del elemento */
+  justify-content: center; /* Alinea horizontalmente (Elementos hijos) */
+  align-items: center; /* Alinea verticalmente (Elementos hijos) */
+}
+.c-typescript {
+  width: 100px; /* ancho */
+  height: 100px; /* alto */
+  border: 2px solid rgb(250, 209, 209); /* ancho, tipo linea, color */
+  background-color: rgb(66, 30, 245); /* color de fondo */
+  color: white; /* color de la letra */
+  display: inline-flex; /* Afecta el contenido del elemento */
+  justify-content: center; /* Alinea horizontalmente (Elementos hijos) */
+  align-items: center; /* Alinea verticalmente (Elementos hijos) */
+}
+.c-pruebas {
+  font-size: 10px; /* Tamaño de la letra */
+  width: 100px; /* ancho */
+  height: 100px; /* alto */
+  border: 2px solid rgb(250, 209, 209); /* ancho, tipo linea, color */
+  background-color: rgb(241, 30, 245); /* color de fondo */
+  color: white; /* color de la letra */
+  display: inline-flex; /* Afecta el contenido del elemento */
+  justify-content: center; /* Alinea horizontalmente (Elementos hijos) */
+  align-items: center; /* Alinea verticalmente (Elementos hijos) */
+}
