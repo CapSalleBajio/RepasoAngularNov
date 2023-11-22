@@ -14,12 +14,13 @@ import { Component } from '@angular/core';
 /* Todo el contenido de un componente (ts)
 va dentro de la clase y su {} */
 export class AppComponent {
+
+
   nombre = "Luis"; // Propiedades / Propiedad de la clase
   apellido = "García" // Puntos y coma son opcionales
   mostrar = true;
   arregloEjemplo = [1,11,34,21]
   propiedadInput = "Texto desde el componente"
-
   materias: string[] = []
   nombreMateria = ""
   calificacionMateria = 0
@@ -41,3 +42,5 @@ export class AppComponent {
 
 }
 // No se puede poner cosas afuera
+
+

@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { BotonIndividual } from './components/individual/boton-individual.component';
 import { BotonClasico } from './components/clasica/boton-clasico.component';
+import { ImageDisplayComponent } from './ejercicio/image-display/image-display.component';
+import { ImageGalleryComponent } from './ejercicio/image-gallery/image-gallery.component';
 
 @NgModule({
   /**
@@ -14,7 +16,9 @@ import { BotonClasico } from './components/clasica/boton-clasico.component';
   declarations: [
     AppComponent,
     BotonIndividual,
-    BotonClasico
+    BotonClasico,
+    ImageDisplayComponent,
+    ImageGalleryComponent
   ],
   /*
     Los modulos que se van a utilizar

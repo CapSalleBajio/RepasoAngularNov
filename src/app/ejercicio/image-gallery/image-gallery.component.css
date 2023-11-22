@@ -1,0 +1,15 @@
+.grid {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+
+input {
+  font-size: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 400px;
+
+}

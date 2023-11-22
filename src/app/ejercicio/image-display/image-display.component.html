@@ -1,0 +1,22 @@
+<div class="card">
+  <h5 class="card-header">{{ imageToDisplay.title }}</h5>
+  <h6>Categoría: {{ imageToDisplay.category }}</h6>
+  <!--
+    imageToDisplay es una propiedad del componente
+    que se puede usar en el HTML
+    El contenido de la propiedad se pasa desde el componente padre
+    mediante el @Input
+
+    [] es usado en los atributos para indicar que el valor es una expresión
+    y no un texto plano
+    ===
+    imageToDisplay is a property of the component
+    that can be used in the HTML
+    The content of the property is passed from the parent component
+    through the @Input
+
+    [] is used in the attributes to indicate that the value is an expression
+    and not plain text
+  -->
+  <img [src]="imageToDisplay.url" [alt]="imageToDisplay.title">
+</div>

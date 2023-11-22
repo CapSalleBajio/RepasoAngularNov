@@ -1,0 +1,55 @@
+<div>
+  <h3>Galería de Imagenes</h3>
+  <div>
+    <p>Las categorías existentes son animals y fruits, esas categorías estan en el arreglo</p>
+    <input [(ngModel)]="busqueda" placeholder="Filtrar Categorías" type="text">
+  </div>
+
+  <!--
+    Images es una propiedad del componente que se puede usar en el HTML
+    Contiene un arreglo de objetos de tipo IImage
+    Son las imagenes por default que se muestran en la galería
+    m es una variable temporal del *ngFor
+    ===
+    Images is a property of the component that can be used in the HTML
+    Contains an array of objects of type IImage
+    They are the default images that are shown in the gallery
+    m is a temporary variable of *ngFor
+  -->
+  <div class="grid">
+    <div *ngFor="let m of this.images">
+      <!--
+        Se va a mostrar el componente image-display por cada imagen o elemento
+        en el arreglo.
+        imageToDisplay es una propiedad del componente image-display, además
+        es un @Input, por lo tanto se puede usar para pasarle información al
+        componente.
+        En este caso se le pasa la imagen que se esta recorriendo en el *ngFor
+        ===
+        The image-display component will be displayed for each image or element
+        in the array.
+        imageToDisplay is a property of the image-display component, in addition
+        is an @Input, therefore it can be used to pass information to the
+        component.
+        In this case the image that is being iterated in the *ngFor is passed
+      -->
+      <image-display *ngIf="busqueda === m.category || busqueda === ''" [imageToDisplay]="m"></image-display>
+      <!--
+        La directiva *ngIf sirve para mostrar u ocultar el elemento.
+        En este caso se usa para filtrar las imagenes por categoría.
+        Si la categoría de la imagen es igual a la categoría que se esta
+        buscando o si no se esta buscando nada, se muestra la imagen.
+        En este ejemplo solo se tienen 2 categorías, animals y fruits.
+        || es el operador OR
+        ===
+        The *ngIf directive is used to show or hide the element.
+        In this case it is used to filter the images by category.
+        If the category of the image is equal to the category that is being
+        searched or if nothing is being searched, the image is displayed.
+        In this example there are only 2 categories, animals and fruits.
+        || is the OR operator
+       -->
+    </div>
+  </div>
+
+</div>
